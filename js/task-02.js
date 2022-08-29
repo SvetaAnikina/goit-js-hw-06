@@ -13,8 +13,10 @@ const markUp = ingredients.map((ingridient) => {
   let ingridientEl = document.createElement("li");
   ingridientEl.classList.add("item");
   ingridientEl.innerText = ingridient;
-  ingridientsEl.appendChild(ingridientEl);
-});
+  return ingridientEl
+  
+})
+ingridientsEl.append(...markUp);
 
 // const addIngridients = () => {
 //   for (let i = 0; i < ingredients.length; i += 1) {
